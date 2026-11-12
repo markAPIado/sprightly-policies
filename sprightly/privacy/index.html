@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sprightly Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Sprightly, the interval-walking app. Sprightly collects no personal data; everything stays on your phone.">
+  <style>
+    :root {
+      --bg: #F7F9F8; --surface: #FFFFFF; --text: #18211D; --weak: #4D5A54;
+      --line: #DDE5E1; --brand: #0B7A4B; --brand-soft: #E3F2EA;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F1412; --surface: #18201C; --text: #E6EEEA; --weak: #A6B3AD;
+        --line: #2A3530; --brand: #34D399; --brand-soft: #143426;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 68ch; margin: 0 auto; padding: 40px 20px 64px; }
+    h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+    p, li { color: var(--text); }
+    .meta { color: var(--weak); margin: 0 0 1.5rem; }
+    .summary {
+      background: var(--brand-soft); border-left: 4px solid var(--brand);
+      border-radius: 8px; padding: 14px 16px; margin: 1.5rem 0;
+    }
+    .summary p { margin: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+    th { color: var(--weak); font-weight: 600; }
+    .table-wrap { overflow-x: auto; }
+    a { color: var(--brand); }
+    footer { margin-top: 3rem; color: var(--weak); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sprightly Privacy Policy</h1>
+    <p class="meta">Effective November 12, 2026 · Sprightly for Android</p>
+
+    <div class="summary">
+      <p><strong>In short:</strong> Sprightly collects no personal data. It has no account, no ads, no analytics and no tracking, and it sends nothing over the internet. Everything it saves stays on your phone.</p>
+    </div>
+
+    <p>Sprightly is an interval-walking timer (3 minutes fast, 3 minutes slow) made by Mark Apiado, the developer. This policy explains what Sprightly stores, what it doesn't do, and why it asks for the permissions it uses.</p>
+
+    <h2>What Sprightly stores on your phone</h2>
+    <p>To show your history and remember your choices, Sprightly saves the following <strong>only on your device</strong>:</p>
+    <ul>
+      <li><strong>Your walks:</strong> when each walk started, which workout you chose, how long you walked, your fast-walking minutes, and whether you finished it.</li>
+      <li><strong>Your settings:</strong> your chosen workout, your Custom workout, warm-up and cool-down, and which cues (voice, chime, vibration, countdown) are on.</li>
+      <li><strong>The walk in progress</strong>, so it can continue if the app is closed during a walk.</li>
+      <li><strong>Two small flags:</strong> that you've seen the health note, and that Sprightly has asked for notification permission.</li>
+    </ul>
+    <p>None of this is sent to the developer or to anyone else.</p>
+
+    <h2>What Sprightly doesn't do</h2>
+    <ul>
+      <li>It doesn't create accounts or ask for your name, email or any contact details.</li>
+      <li>It doesn't send data over the internet, and it contains no analytics, advertising, crash-reporting or tracking tools.</li>
+      <li>It doesn't access your location, camera, microphone, contacts, photos or files.</li>
+      <li>It doesn't read health or fitness data from other apps, count your steps, or read your phone's sensors.</li>
+      <li>It doesn't sell or share any data, because it has none to share.</li>
+    </ul>
+
+    <h2>Permissions and why Sprightly uses them</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Notifications</td><td>To show the walk's notification, with the current phase, a countdown and Pause / Resume, including on the lock screen. Sprightly asks before showing it; the walk works without it.</td></tr>
+          <tr><td>Foreground service (health)</td><td>To keep the timer and the cues running while the screen is locked and the phone is in your pocket. Android shows the notification while this runs.</td></tr>
+          <tr><td>High sampling rate sensors</td><td>Android requires this declaration for a "health" foreground service. Sprightly reads no sensors.</td></tr>
+          <tr><td>Keep the phone awake (wake lock)</td><td>So the cues stay on time while the screen is off. It's released when you pause or finish.</td></tr>
+          <tr><td>Vibration</td><td>For the vibration cues.</td></tr>
+          <tr><td>Audio settings</td><td>Declared by the audio library that plays the chime, so the chime can play alongside your music.</td></tr>
+          <tr><td>Internet and network state</td><td>Declared by libraries Sprightly is built with (Expo's file module and the audio player). Sprightly currently makes no network requests and sends no data. If a future version checks for app updates over the internet, this policy will be updated first.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Spoken cues</h2>
+    <p>Voice cues (such as "Fast walk" or "3, 2, 1") are spoken by your phone's own text-to-speech service. Sprightly passes it only these short phrases, never personal information.</p>
+
+    <h2>Backups</h2>
+    <p>If you have turned on Android's backup for your phone, Android may include Sprightly's saved walks and settings in your device backup to your Google account, so they can be restored on a new phone. This is managed by Android and your Google account settings, not by Sprightly. Sprightly itself sends nothing.</p>
+
+    <h2>Deleting your data</h2>
+    <p>Because everything is stored on your phone, you're in control: uninstalling Sprightly, or clearing its storage in Android's settings, deletes all of it. The developer holds no copy.</p>
+
+    <h2>Children</h2>
+    <p>Sprightly is a fitness app for adults and is not directed at children under 13. It collects no personal data from anyone.</p>
+
+    <h2>Health</h2>
+    <p>Sprightly is a walking timer, not a medical device, and doesn't give medical advice. If you have a health condition, check with a healthcare professional before starting a new exercise routine.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If Sprightly changes how it handles data, this page will be updated with a new effective date before the change reaches the app.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:connect@markapiado.com">connect@markapiado.com</a></p>
+
+    <footer>Sprightly · <a href="../../">Policies for Mark Apiado's apps</a></footer>
+  </main>
+</body>
+</html>
